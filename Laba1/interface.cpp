@@ -31,18 +31,18 @@ Interface::Interface()
             bool doNotPark=false;
             do{
                 doNotPark=false;
-                cout << "Введите номер машины, которую нужно поставить на парковку.\n0 - чтобы отменить действие\n";
+                cout << "Enter the number of the car you want to park.\n0 - to cancel.\n";
                 printCarArray(cars);
                 x = ReadInt();
                 if (x > this->cars_amount)
                 {
                     doNotPark = true;
-                    cout << "Машин всего " << this->cars_amount << endl;
+                    cout << "Cars in total: " << this->cars_amount << endl;
                 }
                 else if (x < 0)
                 {
                     doNotPark = true;
-                    cout << "Неверный ввод\n";
+                    cout << "Wrong input.\n";
                 }
                 else if (x == 0){
                     doNotPark = true;
@@ -51,13 +51,13 @@ Interface::Interface()
                 else if (cars[x-1].isParked())
                 {
                     doNotPark = true;
-                    cout << "Эта машина уже припаркована\n";
+                    cout << "This car have already parked.\n";
                 }
             }while (doNotPark);
 
             if (!doNotPark)
                 cars[x-1].park(parking);
-            cout << endl << "Припаркованные машины:" << endl;
+            cout << endl << "Parked cars:" << endl;
             printParkedCars(parking);
             cout << endl;
             printMenuText();
@@ -69,18 +69,18 @@ Interface::Interface()
             bool doNotPark=false;
             do{
                doNotPark = false;
-               cout << "Введите номер машины, которую нужно убрать с парковки.\n0 - чтобы отменить действие\n";
+               cout << "Enter the number of the car you want to unpark.\n0 - to cancel\n";
                printCarArray(cars);
                x = ReadInt();
                if (x > this->cars_amount)
                {
                    doNotPark = true;
-                   cout << "Машин всего " << this->cars_amount << endl;
+                   cout << "Cars in total: " << this->cars_amount << endl;
                }
                else if (x < 0)
                {
                    doNotPark = true;
-                   cout << "Неверный ввод\n";
+                   cout << "Wrong output\n";
                }
                else if (x == 0) {
                    doNotPark = true;
@@ -89,12 +89,12 @@ Interface::Interface()
                else if (!cars[x-1].isParked())
                {
                    doNotPark = true;
-                   cout << "Эта машина не на парковке\n";
+                   cout << "This car unparked\n";
                }
                }while (doNotPark);
             if (!doNotPark)
                 cars[x-1].unpark();
-            cout << endl << "Припаркованные машины:" << endl;
+            cout << endl << "Parked cars: " << endl;
             printParkedCars(parking);
             cout << endl;
             printMenuText();
@@ -103,21 +103,21 @@ Interface::Interface()
 
 
         case 3: {
-            cout << "Припаркованные машины:" << endl;
+            cout << "Parked cars: " << endl;
             printParkedCars(parking);
             printMenuText();
             break;
             }
 
         case 4: {
-            cout << "Все машины:" << endl;
+            cout << "All cars: " << endl;
             printCarArray(cars);
             printMenuText();
             break;
         }
         case 5: {
             Car** all_cars = parking.getAllCars();
-            cout << "Машины зафиксированные на парковке:" << endl;
+            cout << "Cars that have ever been on the park:" << endl;
             printCarArray(all_cars);
             break;
         }
@@ -134,13 +134,12 @@ Interface::~Interface()
 }
 
 void Interface::printMenuText() {
-    std::cout << "\nВведите 1, чтобы поставить на парковку машину.\nВведите 2, чтобы убрать машину с парковки.\n"
-                 "Введите 2, чтобы добавить новый автомобиль\n"
-                 "Введите 3, чтобы вывести список всех припаркованных автомобилей.\n"
-                 "Введите 4, чтобы вывести список всех автомобилей\n"
-                 "Введите 5, чтобы вывести список всех автомобилей, зафиксированных на парковке\n"
-                 "Введите 6, чтобы повторить этот текст\n"
-                 "Введите 0, чтобы выйти.\n\n";
+    std::cout << "\nEnter 1 to park a car.\nEnter 2 to unpark a car.\n"
+                 "Enter 3 to print the list of all parked cars.\n"
+                 "Enter 4 to print the list of all cars.\n"
+                 "Enter 5 to print the list of cars that have ever been on the park.\n"
+                 "Enter 6 to print this text again.\n"
+                 "Enter 0 to exit.\n\n";
     return;
 }
 
