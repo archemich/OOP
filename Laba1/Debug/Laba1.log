@@ -1,0 +1,3 @@
+﻿  ConsoleInterface.cpp
+D:\Projects\OOP\Laba1\ConsoleInterface.cpp(176,26): warning C4018: <: несоответствие типов со знаком и без знака
+  Laba1.vcxproj -> D:\Projects\OOP\Laba1\Debug\Laba1.exe
