@@ -1,7 +1,4 @@
 
-
-
-
 /*
 // ЮФУ ИКТИБ МОП ЭВМ
 // Неприн Михаил Андреевич, КТбо2-1
@@ -10,7 +7,6 @@
 */
 
 #include "ConsoleInterface.h"
-#include "CarCreator.h"
 #include <iostream>
 
 using namespace std;

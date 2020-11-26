@@ -140,16 +140,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Car.cpp" />
-    <ClCompile Include="CarCreator.cpp" />
     <ClCompile Include="ConsoleInterface.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Parking.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Car.h" />
-    <ClInclude Include="CarCreator.h" />
     <ClInclude Include="ConsoleInterface.h" />
-    <ClInclude Include="Initializer.h" />
     <ClInclude Include="Parking.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
