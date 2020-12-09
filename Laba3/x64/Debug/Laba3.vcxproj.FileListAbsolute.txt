@@ -1,0 +1,2 @@
+D:\Projects\OOP\Laba3\x64\Debug\Laba3.exe
+D:\Projects\OOP\Laba3\x64\Debug\Laba3.pdb

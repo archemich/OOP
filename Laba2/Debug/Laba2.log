@@ -1,0 +1,6 @@
+﻿  logic.cpp
+D:\Projects\OOP\Laba2\logic.cpp(53,26): warning C4018: <: несоответствие типов со знаком и без знака
+D:\Projects\OOP\Laba2\logic.cpp(70,20): warning C4154: удаление массива; выполнено преобразование к указателю
+  ui.cpp
+  Создание кода...
+  Laba2.vcxproj -> D:\Projects\OOP\Laba2\Debug\Laba2.exe
