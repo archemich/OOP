@@ -1,2 +1,9 @@
 ﻿  ConsoleInterface.cpp
+  main.cpp
+  Operations.cpp
+  Shape.cpp
+  ShapeFactory.cpp
+  Square.cpp
+  Triangle.cpp
+  Создание кода...
   Laba3.vcxproj -> D:\Projects\OOP\Laba3\x64\Debug\Laba3.exe
