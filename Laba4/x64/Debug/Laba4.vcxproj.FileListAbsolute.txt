@@ -1,0 +1,2 @@
+D:\Projects\OOP\Laba4\x64\Debug\Laba4.exe
+D:\Projects\OOP\Laba4\x64\Debug\Laba4.pdb
